@@ -1,0 +1,8 @@
+if game.Workspace.FilteringEnabled == false then
+game.Players.LocalPlayer.Character.Humanoid.MaxHealth = 0
+end
+if game.Workspace.FilteringEnabled == true then
+local player=game.Players.LocalPlayer.Character
+player.Humanoid:Remove()
+Instance.new('Humanoid',player)
+end
